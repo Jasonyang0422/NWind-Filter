@@ -1,0 +1,7 @@
+<ul class="pagination pagination-lg">
+	<li ng-click="selectLetter(letter)" ng-class="{active: getCurrentLetter() === letter, disabled: disabledLetters.indexOf(letter) !== -1}" ng-repeat="letter in alphabet">
+		<a ui-sref="{{ type }}.list({letter: letter})">
+			<span ng-class="{'line-through': disabledLetters.indexOf(letter) !== -1}">{{ letter }}</span>
+		</a>
+	</li>
+</ul>

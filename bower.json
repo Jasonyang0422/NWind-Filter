@@ -1,0 +1,21 @@
+{
+  "name": "nwind-filter",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "https://github.com/Jasonyang0422/NWind-Filter",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.3",
+    "bootstrap": "^3.3.6",
+    "angular-ui-router": "^0.2.18",
+    "bluebird": "^3.3.4"
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NWind-Filter</title>
+    <link href="/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="/style.css" rel="stylesheet" />
+    <script src="/angular/angular.js"></script>
+    <script src="/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="/bluebird/js/browser/bluebird.js"></script>
+    <script src="/main.js"></script>
+    <!-- home -->
+    <script src="/home/home.state.js"></script>
+    <!-- navbar -->
+    <script src="/navbar/navbar.controller.js"></script>
+    <!-- letter-picker -->
+    <script src="/letter-picker/letter-picker.directive.js"></script>
+    <script src="/letter-picker/letter-picker.factory.js"></script>
+    <!-- employee -->
+    <script src="/employee/employee.state.js"></script>
+    <script src="/employee/employee.list.controller.js"></script>
+    <script src="/employee/employee.controller.js"></script>    
+    <script src="/employee/employee.factory.js"></script>
+    <!-- product -->
+    <script src="/product/product.state.js"></script>
+    <script src="/product/product.factory.js"></script>
+    <script src="/product/product.list.controller.js"></script>
+    <script src="/product/product.controller.js"></script>
+  </head>
+  <body ng-app="nwindFilter">
+  	<div class="container-fluid">
+			<ul class="nav nav-tabs" ng-controller="NavbarCtrl">
+			  <li role="presentation" ng-click="clearCurrentLetter()"><a ui-sref="home">Home</a></li>
+			  <li role="presentation" ng-click="clearCurrentLetter()"><a ui-sref="product">Products</a></li>
+			  <li role="presentation" ng-click="clearCurrentLetter()"><a ui-sref="employee">Employees</a></li>
+			</ul>
+		</div>
+		<div class="container-fluid">
+			<h1>NWind Filter</h1>
+			<ui-view></ui-view>
+		</div>  	
+  </body>
+ </html>
